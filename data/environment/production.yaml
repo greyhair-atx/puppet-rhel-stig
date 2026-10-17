@@ -1,0 +1,4 @@
+---
+# Optional defaults for the production Puppet environment.
+# Add classes or class parameters here; more-specific hierarchy data wins.
+{}

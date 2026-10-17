@@ -1,0 +1,10 @@
+lookup_options:
+  stigs::packages::package_overrides:
+    merge:
+      strategy: deep
+  stigs::permissions::file_overrides:
+    merge:
+      strategy: deep
+
+stigs::packages::package_overrides: {}
+stigs::permissions::file_overrides: {}

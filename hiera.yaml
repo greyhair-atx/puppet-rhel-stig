@@ -1,0 +1,36 @@
+---
+version: 5
+
+defaults:
+  datadir: data
+  data_hash: yaml_data
+
+# Highest priority first. Missing files are skipped.
+# Network-qualified filenames are optional; unqualified files are shared.
+hierarchy:
+  - name: Node
+    paths:
+      - "node/%{trusted.extensions.pp_network}.%{trusted.certname}.yaml"
+      - "node/%{trusted.certname}.yaml"
+  - name: Project
+    paths:
+      - "project/%{trusted.extensions.pp_network}.%{trusted.extensions.pp_project}.yaml"
+      - "project/%{trusted.extensions.pp_project}.yaml"
+  - name: Role
+    paths:
+      - "role/%{trusted.extensions.pp_network}.%{trusted.extensions.pp_role}.yaml"
+      - "role/%{trusted.extensions.pp_role}.yaml"
+  - name: Region
+    paths:
+      - "region/%{trusted.extensions.pp_network}.%{trusted.extensions.pp_region}.yaml"
+      - "region/%{trusted.extensions.pp_region}.yaml"
+  - name: Zone
+    paths:
+      - "zone/%{trusted.extensions.pp_network}.%{trusted.extensions.pp_zone}.yaml"
+      - "zone/%{trusted.extensions.pp_zone}.yaml"
+  - name: Network
+    path: "network/%{trusted.extensions.pp_network}.yaml"
+  - name: Environment defaults
+    path: "environment/%{server_facts.environment}.yaml"
+  - name: Common
+    path: common.yaml

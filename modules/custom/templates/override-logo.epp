@@ -1,0 +1,5 @@
+<%- | String[1] $logo_path | -%>
+# Managed by corp Puppet.
+# Manual changes will be replaced.
+[org/gnome/login-screen]
+logo='<%= $logo_path %>'

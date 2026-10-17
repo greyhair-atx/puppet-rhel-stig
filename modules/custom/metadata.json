@@ -1,0 +1,15 @@
+{
+  "name": "local-custom",
+  "version": "1.3.0",
+  "author": "Local",
+  "source": "https://github.com/greyhair-atx/puppet-rhel-stig",
+  "summary": "Site-specific configuration for managed RHEL systems",
+  "license": "MIT",
+  "dependencies": [],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": ["8", "9", "10"]
+    }
+  ]
+}

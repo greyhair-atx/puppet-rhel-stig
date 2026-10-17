@@ -1,0 +1,5 @@
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+#%PAM-1.0
+auth       include      system-auth
+account    required     pam_permit.so

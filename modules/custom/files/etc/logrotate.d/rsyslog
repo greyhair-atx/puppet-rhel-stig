@@ -1,0 +1,16 @@
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+
+/var/log/cron
+/var/log/maillog
+/var/log/messages
+/var/log/secure
+/var/log/spooler
+/var/log/sudo.log
+{
+    missingok
+    sharedscripts
+    postrotate
+        /usr/bin/systemctl -s HUP kill rsyslog.service >/dev/null 2>&1 || true
+    endscript
+}

@@ -1,0 +1,6 @@
+.ps_sandbox/
+/ansible/
+/stig_xmls/
+/scc/
+/custom-*.zip
+/Puppet_LVM_Resize_RHEL8-10.pdf

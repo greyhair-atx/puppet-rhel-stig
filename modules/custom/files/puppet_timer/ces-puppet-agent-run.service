@@ -1,0 +1,9 @@
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+[Unit]
+Description=Run the Puppet agent
+Documentation=man:puppet-agent(8)
+
+[Service]
+Type=oneshot
+ExecStart=/opt/puppetlabs/bin/puppet agent -t

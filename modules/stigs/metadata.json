@@ -1,0 +1,15 @@
+{
+  "name": "local-stigs",
+  "version": "1.1.0",
+  "author": "Local",
+  "source": "https://github.com/greyhair-atx/puppet-rhel-stig",
+  "summary": "Native Puppet implementation of RHEL 8 V2R8, RHEL 9 V2R9, and RHEL 10 V1R2 STIG controls",
+  "license": "MIT AND LGPL-2.1-or-later",
+  "dependencies": [],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": ["8", "9", "10"]
+    }
+  ]
+}

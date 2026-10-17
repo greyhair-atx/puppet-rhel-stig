@@ -1,0 +1,20 @@
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+
+[org/gnome/settings-daemon/peripherals/smartcard]
+removal-action='lock-screen'
+
+[org/gnome/desktop/media-handling]
+autorun-never=true
+automount-open=false
+
+
+[org/gnome/desktop/session]
+
+[org/gnome/desktop/screensaver]
+picture-uri=''
+
+
+
+[org/gnome/settings-daemon/plugins/media-keys]
+logout=['']

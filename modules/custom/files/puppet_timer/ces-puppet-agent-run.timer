@@ -1,0 +1,22 @@
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+[Unit]
+Description=Run the Puppet agent on the CES schedule
+
+[Timer]
+# Monday-Friday: every 10 minutes from 06:00 through 15:00.
+OnCalendar=Mon..Fri *-*-* 06..14:00,10,20,30,40,50
+OnCalendar=Mon..Fri *-*-* 15:00
+# Monday-Friday: every 30 minutes from 15:01 through 20:31.
+OnCalendar=Mon..Fri *-*-* 15..20:01,31
+# Monday-Friday: every two hours from 21:01 through 05:59.
+OnCalendar=Mon..Fri *-*-* 21,23:01
+OnCalendar=Mon..Fri *-*-* 01,03,05:01
+# Saturday-Sunday: every two hours.
+OnCalendar=Sat,Sun *-*-* 01,03,05,07,09,11,13,15,17,19,21,23:01
+AccuracySec=1s
+Persistent=true
+Unit=ces-puppet-agent-run.service
+
+[Install]
+WantedBy=timers.target

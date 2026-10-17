@@ -1,0 +1,9 @@
+<%- | Array[String[1], 1] $nameservers, Array[String[1]] $search_domains | -%>
+# Managed by Puppet.
+# Manual changes will be replaced.
+<% if $search_domains != [] { -%>
+search <%= $search_domains.join(' ') %>
+<% } -%>
+<% $nameservers.each |String[1] $nameserver| { -%>
+nameserver <%= $nameserver %>
+<% } -%>

@@ -1,0 +1,4 @@
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+[org/gnome/login-screen]
+disable-user-list=true

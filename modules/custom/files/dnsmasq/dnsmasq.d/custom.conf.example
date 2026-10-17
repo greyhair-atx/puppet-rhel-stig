@@ -1,0 +1,3 @@
+# Copy to files/dnsmasq/dnsmasq.d/custom.conf.<pp_network>.<pp_project>.
+# For example, forward queries for a project domain to its DNS server:
+# server=/project.example/192.0.2.53

@@ -1,0 +1,9 @@
+---
+lookup_options:
+  classes:
+    merge: unique
+
+# Add classes here to apply them to every node in this environment.
+# For project-only STIG enforcement, put classes: [stigs::main] in that
+# project's data/project/<pp_project>.yaml instead.
+classes: []

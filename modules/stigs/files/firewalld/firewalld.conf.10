@@ -1,0 +1,20 @@
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+# firewalld config file
+# default zone
+# DefaultZone=public
+DefaultZone=drop
+
+CleanupOnExit=yes
+CleanupModulesOnExit=no
+IPv6_rpfilter=strict
+IndividualCalls=no
+LogDenied=off
+FirewallBackend=nftables
+FlushAllOnReload=yes
+ReloadPolicy=INPUT:DROP,FORWARD:DROP,OUTPUT:DROP
+RFC3964_IPv4=yes
+StrictForwardPorts=no
+NftablesFlowtable=off
+NftablesCounters=no
+NftablesTableOwner=yes

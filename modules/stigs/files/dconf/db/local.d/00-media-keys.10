@@ -1,0 +1,4 @@
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+[org/gnome/settings-daemon/plugins/media-keys]
+logout=@as []

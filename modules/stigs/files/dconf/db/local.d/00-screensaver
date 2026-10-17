@@ -1,0 +1,8 @@
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+[org/gnome/desktop/screensaver]
+lock-enabled=true
+lock-delay=uint32 5
+
+[org/gnome/desktop/session]
+idle-delay=uint32 600

@@ -1,0 +1,20 @@
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+
+# NOTE: Up to RHEL 8 release included, SELINUX=disabled would also
+# fully disable SELinux during boot. If you need a system with SELinux
+# fully disabled instead of SELinux running with no policy loaded, you
+# need to pass selinux=0 to the kernel command line. You can use grubby
+# to persistently set the bootloader to boot with selinux=0:
+#
+#    grubby --update-kernel ALL --args selinux=0
+#
+# To revert back to SELinux enabled:
+#
+#    grubby --update-kernel ALL --remove-args selinux
+#
+SELINUX=enforcing
+# SELINUXTYPE= can take one of these three values:
+#     targeted - Targeted processes are protected,
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted

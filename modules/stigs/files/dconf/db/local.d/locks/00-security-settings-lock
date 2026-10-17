@@ -1,0 +1,7 @@
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+/org/gnome/settings-daemon/peripherals/smartcard/removal-action
+/org/gnome/desktop/media-handling/automount-open
+/org/gnome/desktop/media-handling/autorun-never
+/org/gnome/desktop/screensaver/picture-uri
+/org/gnome/settings-daemon/plugins/media-keys/logout

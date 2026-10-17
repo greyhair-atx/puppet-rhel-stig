@@ -1,0 +1,15 @@
+---
+lookup_options:
+  custom::selinux_boolean::set_booleans:
+    merge:
+      strategy: deep
+  custom::rpm_install::rpms:
+    merge:
+      strategy: unique
+  custom::rpm_install::xrpms:
+    merge:
+      strategy: unique
+
+custom::rpm_install::rpms: []
+custom::rpm_install::xrpms: []
+custom::selinux_boolean::set_booleans: {}

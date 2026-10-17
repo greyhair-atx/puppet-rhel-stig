@@ -1,0 +1,20 @@
+<%- |
+  String[1] $background_color,
+  String[1] $message,
+  Boolean   $top_banner,
+  Boolean   $bottom_banner,
+  Boolean   $system_info,
+  String[1] $color,
+| -%>
+# Managed by CES Puppet.
+# Manual changes will be replaced.
+[org/gnome/shell]
+enabled-extensions=['classification-banner@gnome-shell-extensions.gcampax.github.com']
+
+[org/gnome/shell/extensions/classification-banner]
+background-color='<%= $background_color %>'
+message='<%= $message %>'
+top-banner=<%= $top_banner %>
+bottom-banner=<%= $bottom_banner %>
+system-info=<%= $system_info %>
+color='<%= $color %>'
